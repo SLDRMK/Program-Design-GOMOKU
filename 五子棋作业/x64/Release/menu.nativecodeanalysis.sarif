@@ -1,0 +1,97 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6271",
+          "message": {
+            "text": "传递给 \"scanf_s\" 的额外参数。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///S:/大二/大二上/程设/workspace/五子棋作业/menu.c"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 12,
+                  "endLine": 13,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "menu",
+                  "decoratedName": "menu",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31933.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///S:/大二/大二上/程设/workspace/五子棋作业/menu.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "b37717a5d8af423b948e9c2b2883790eb4541762259a9ff9807639a1dc6a78e9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///s:/大二/大二上/程设/workspace/五子棋作业/board.h"
+          },
+          "hashes": {
+            "sha-256": "3fef62253be3fbe0cc0b0a1ab5b6534c37ac5a4ad072ae6bb036330b3bdad9ed"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///s:/大二/大二上/程设/workspace/五子棋作业/endgame.h"
+          },
+          "hashes": {
+            "sha-256": "19a01099f37ec312e8b1835e2e66db79007875700ca74d87d1f51bef3b7f9a93"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///s:/大二/大二上/程设/workspace/五子棋作业/menu.h"
+          },
+          "hashes": {
+            "sha-256": "7678b7d9329ae953d26dfcdd9fe7a3e532415631bc3647a821498c5779798d9a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///s:/大二/大二上/程设/workspace/五子棋作业/meta.h"
+          },
+          "hashes": {
+            "sha-256": "117f5522824f0d2d4253c7bf5889b1659e47b58bc776b31af588dbcd6e3732f9"
+          }
+        }
+      ]
+    }
+  ]
+}
